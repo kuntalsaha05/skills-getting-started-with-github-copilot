@@ -58,16 +58,114 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 18px;
+  padding: 18px 16px;
+  border: 1px solid #dfe7ff;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+  box-shadow: 0 8px 20px rgba(26, 35, 126, 0.08);
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .activity-card h4 {
+  margin: 0;
+  color: #1a237e;
+  font-size: 1.2rem;
+}
+
+.activity-description {
   margin-bottom: 10px;
-  color: #0066cc;
+  color: #4d4d4d;
+}
+
+.activity-schedule {
+  margin-bottom: 14px;
+  color: #3b3f5a;
+}
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.participants-section {
+  background: #eef4ff;
+  border: 1px solid #d7e3ff;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.participants-section h5 {
+  margin: 0 0 8px;
+  color: #1a237e;
+  font-size: 0.95rem;
+}
+
+.participants-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  color: #2f3b52;
+  list-style: none;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e3e8f5;
+}
+
+.participant-email {
+  word-break: break-all;
+}
+
+.remove-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #ffebee;
+  color: #c62828;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.remove-btn:hover {
+  background: #c62828;
+  color: #ffffff;
+}
+
+.participants-empty {
+  margin: 0;
+  color: #6f7b8c;
+  font-style: italic;
 }
 
 .activity-card p {
