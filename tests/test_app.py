@@ -208,4 +208,5 @@ class TestActivityCapacity:
             f"/activities/{activity_name}/signup",
             params={"email": overflow_email}
         )
-        assert response.status_code == 200
+        assert response.status_code == 400
+        assert response.json()["detail"] == "Activity is full"
