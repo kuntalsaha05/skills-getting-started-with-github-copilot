@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 (participant) => `
               <div class="participant-item">
                 <span class="participant-email">${participant}</span>
-                <button class="remove-btn" data-email="${participant}" data-activity="${name}" aria-label="Remove ${participant}">
+                <button type="button" class="remove-btn" data-email="${participant}" data-activity="${name}" aria-label="Remove ${participant}">
                   &times;
                 </button>
               </div>
